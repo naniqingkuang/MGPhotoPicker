@@ -1,0 +1,334 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7D4397D71E49B14D00949C85 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D4397D61E49B14D00949C85 /* Foundation.framework */; };
+		7D4397D91E49B14D00949C85 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D4397D81E49B14D00949C85 /* UIKit.framework */; };
+		7D4397E31E49B14D00949C85 /* MGPhotoPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D4397E21E49B14D00949C85 /* MGPhotoPicker.h */; };
+		7D4397E51E49B14D00949C85 /* MGPhotoPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4397E41E49B14D00949C85 /* MGPhotoPicker.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7D4397D31E49B14D00949C85 /* libMGPhotoPicker.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libMGPhotoPicker.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D4397D61E49B14D00949C85 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7D4397D81E49B14D00949C85 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7D4397DD1E49B14D00949C85 /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		7D4397DE1E49B14D00949C85 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		7D4397E01E49B14D00949C85 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		7D4397E11E49B14D00949C85 /* MGPhotoPicker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MGPhotoPicker-Prefix.pch"; sourceTree = "<group>"; };
+		7D4397E21E49B14D00949C85 /* MGPhotoPicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MGPhotoPicker.h; sourceTree = "<group>"; };
+		7D4397E41E49B14D00949C85 /* MGPhotoPicker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MGPhotoPicker.m; sourceTree = "<group>"; };
+		7D4397E81E49B14D00949C85 /* 0xdeadfa11 */ = {isa = PBXFileReference; lastKnownFileType = text; name = 0xdeadfa11; path = Package/usr/lib/0xdeadfa11; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7D4397CF1E49B14D00949C85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D4397D71E49B14D00949C85 /* Foundation.framework in Frameworks */,
+				7D4397D91E49B14D00949C85 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7D4397C91E49B14D00949C85 = {
+			isa = PBXGroup;
+			children = (
+				7D4397DA1E49B14D00949C85 /* MGPhotoPicker */,
+				7D4397D51E49B14D00949C85 /* Frameworks */,
+				7D4397D41E49B14D00949C85 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7D4397D41E49B14D00949C85 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7D4397D31E49B14D00949C85 /* libMGPhotoPicker.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7D4397D51E49B14D00949C85 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7D4397D61E49B14D00949C85 /* Foundation.framework */,
+				7D4397D81E49B14D00949C85 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7D4397DA1E49B14D00949C85 /* MGPhotoPicker */ = {
+			isa = PBXGroup;
+			children = (
+				7D4397E21E49B14D00949C85 /* MGPhotoPicker.h */,
+				7D4397E41E49B14D00949C85 /* MGPhotoPicker.m */,
+				7D4397DB1E49B14D00949C85 /* Package */,
+				7D4397DF1E49B14D00949C85 /* Supporting Files */,
+			);
+			path = MGPhotoPicker;
+			sourceTree = "<group>";
+		};
+		7D4397DB1E49B14D00949C85 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				7D4397DC1E49B14D00949C85 /* DEBIAN */,
+				7D4397E61E49B14D00949C85 /* usr */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		7D4397DC1E49B14D00949C85 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				7D4397DD1E49B14D00949C85 /* control.txt */,
+				7D4397DE1E49B14D00949C85 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		7D4397DF1E49B14D00949C85 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7D4397E01E49B14D00949C85 /* PackageVersion.plist */,
+				7D4397E11E49B14D00949C85 /* MGPhotoPicker-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7D4397E61E49B14D00949C85 /* usr */ = {
+			isa = PBXGroup;
+			children = (
+				7D4397E71E49B14D00949C85 /* lib */,
+			);
+			name = usr;
+			sourceTree = "<group>";
+		};
+		7D4397E71E49B14D00949C85 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				7D4397E81E49B14D00949C85 /* 0xdeadfa11 */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		7D4397D01E49B14D00949C85 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D4397E31E49B14D00949C85 /* MGPhotoPicker.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		7D4397D21E49B14D00949C85 /* MGPhotoPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D4397EB1E49B14D00949C85 /* Build configuration list for PBXNativeTarget "MGPhotoPicker" */;
+			buildPhases = (
+				7D4397CE1E49B14D00949C85 /* Sources */,
+				7D4397CF1E49B14D00949C85 /* Frameworks */,
+				7D4397D01E49B14D00949C85 /* Headers */,
+				7D4397D11E49B14D00949C85 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MGPhotoPicker;
+			productName = MGPhotoPicker;
+			productReference = 7D4397D31E49B14D00949C85 /* libMGPhotoPicker.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7D4397CA1E49B14D00949C85 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				TargetAttributes = {
+					7D4397D21E49B14D00949C85 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 7SG88SVCRN;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 7D4397CD1E49B14D00949C85 /* Build configuration list for PBXProject "MGPhotoPicker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7D4397C91E49B14D00949C85;
+			productRefGroup = 7D4397D41E49B14D00949C85 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7D4397D21E49B14D00949C85 /* MGPhotoPicker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7D4397D11E49B14D00949C85 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7D4397CE1E49B14D00949C85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D4397E51E49B14D00949C85 /* MGPhotoPicker.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7D4397E91E49B14D00949C85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		7D4397EA1E49B14D00949C85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		7D4397EC1E49B14D00949C85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEVELOPMENT_TEAM = 7SG88SVCRN;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MGPhotoPicker/MGPhotoPicker-Prefix.pch";
+				INSTALL_PATH = /usr/lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		7D4397ED1E49B14D00949C85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEVELOPMENT_TEAM = 7SG88SVCRN;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MGPhotoPicker/MGPhotoPicker-Prefix.pch";
+				INSTALL_PATH = /usr/lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7D4397CD1E49B14D00949C85 /* Build configuration list for PBXProject "MGPhotoPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D4397E91E49B14D00949C85 /* Debug */,
+				7D4397EA1E49B14D00949C85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D4397EB1E49B14D00949C85 /* Build configuration list for PBXNativeTarget "MGPhotoPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D4397EC1E49B14D00949C85 /* Debug */,
+				7D4397ED1E49B14D00949C85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7D4397CA1E49B14D00949C85 /* Project object */;
+}

@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'MGPhotoPicker' target in the 'MGPhotoPicker' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
